@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-2" href="#">Mi sitio web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Listar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="save.html">Guardar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="indexTeacher.html">Profesores</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center m-4">
+        <table id="students-table" class="table-hover mt-2 table tab-pane table-striped display responsive nowrap mt-5"
+            style="width: 100%">
+            <thead class="mt-5">
+                <tr class="table-info mt-5">
+                    <th>Id Studen</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>User Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="js/tableStudents.js"></script>
+
+</body>
+
+</html>

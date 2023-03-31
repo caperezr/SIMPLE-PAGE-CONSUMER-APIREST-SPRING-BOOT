@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-3" href="#">Mi sitio web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Listar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="save.html">Guardar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center m-4">
+        <form id="my-form" class="m-4 border border-dark p-4">
+
+            <input type="hidden" class="form-control" id="id-studen" name="id-studen">
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="first-name" class="form-label">First name:</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="last-name" class="form-label">Last name:</label>
+                    <input type="text" class="form-control" id="last-name" name="last-name">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="user-name" class="form-label">User name:</label>
+                    <input type="text" class="form-control" id="user-name" name="user-name">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary" id="cancel-button">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="update-button">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/formUpdate.js"></script>
+
+</body>
+
+</html>

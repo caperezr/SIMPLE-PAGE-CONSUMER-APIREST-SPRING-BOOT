@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cliente</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Listar Estudiantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="save.html">Guardar Estudiante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexTeacher.html">Listar Profesores</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center m-4">
+        <form id="my-form" class="m-4 border border-dark p-4">
+
+            <input type="hidden" class="form-control" id="id-studen" name="id-studen">
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="first-name" class="form-label">First name:</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="last-name" class="form-label">Last name:</label>
+                    <input type="text" class="form-control" id="last-name" name="last-name">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="dni-teacher" class="form-label">DNI Teacher:</label>
+                    <input type="text" class="form-control" id="dni-teacher" name="dni-teacher">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="age-teacher" class="form-label">Age Teacher:</label>
+                    <input type="text" class="form-control" id="age-teacher" name="age-teacher">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary" id="cancel-button">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="update-button">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
